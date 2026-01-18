@@ -18,7 +18,7 @@ Examples are:
 
 This becomes your “professional identity.”
 
-
+_______________________________________________________________________________________________________________________________________________
 Step 2: 
 
 Build 3 portfolio projects (not 30 tutorials)
@@ -38,6 +38,7 @@ Project 3 — End‑to‑End System Design
 These three projects beat 100 certificates.
 
 
+_______________________________________________________________________________________________________________________________________________
 Step 3:
 
 Document everything like a Foundational Architect
@@ -63,6 +64,7 @@ Document everything like a Foundational Architect
 This is where ONE stop being “impostor” and become “professional.”
 
 
+_______________________________________________________________________________________________________________________________________________
 Step 4
 
 Practice interviews with STAR + Architecture diagrams
@@ -71,6 +73,7 @@ Interviewers love candidates who draw systems.
 
 
 
+_______________________________________________________________________________________________________________________________________________
 Step 5 
 
 Build confidence through mechanical truth
