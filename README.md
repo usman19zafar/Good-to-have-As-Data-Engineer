@@ -1,3 +1,6 @@
+Purpose of this Exrcise
+Teaching other keep me focused!
+
 Hire Immediately List:
 
 A. Data Quality Engineering
