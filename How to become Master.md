@@ -1,5 +1,5 @@
 CORE IDEA: You don’t master 100 skills, You master 10 patterns that generate the 100 skills.
-```mermaid
+```Code
 DATA ENGINEERING SKILL MAP (2026) — LAYERED ARCHITECTURE VIEW
 
 ┌────────────────────────────────────────────────────────────────────────────┐
@@ -22,14 +22,14 @@ LAYER 0 — BUSINESS & SYSTEM CONTEXT  (Why the system exists)
 LAYER 1 — INGESTION  (How data enters the system)
 ================================================================================
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 1A. Batch Ingestion                                                   │
+    │ 1A. Batch Ingestion                                                    │
     └────────────────────────────────────────────────────────────────────────┘
         • File ingestion (CSV, Parquet, JSON)
         • APIs, Webhooks
         • Scheduled loads (Airflow, ADF, Glue)
 
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 1B. Streaming Ingestion                                               │
+    │ 1B. Streaming Ingestion                                                │
     └────────────────────────────────────────────────────────────────────────┘
         • Kafka (producers, partitions, offsets)
         • EventHub / Kinesis
@@ -41,14 +41,14 @@ LAYER 1 — INGESTION  (How data enters the system)
 LAYER 2 — STORAGE  (Where raw data lives)
 ================================================================================
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 2A. Data Lake (Raw Zone)                                              │
+    │ 2A. Data Lake (Raw Zone)                                               │
     └────────────────────────────────────────────────────────────────────────┘
         • ADLS / S3 / GCS
         • Parquet, Delta, ORC
         • Partitioning, Bucketing
 
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 2B. Lakehouse (Bronze → Silver → Gold)                                │
+    │ 2B. Lakehouse (Bronze → Silver → Gold)                                 │
     └────────────────────────────────────────────────────────────────────────┘
         • Delta Lake
         • ACID transactions
@@ -56,7 +56,7 @@ LAYER 2 — STORAGE  (Where raw data lives)
         • Schema evolution
 
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 2C. Data Warehouse                                                    │
+    │ 2C. Data Warehouse                                                     │
     └────────────────────────────────────────────────────────────────────────┘
         • Snowflake / BigQuery / Redshift / Synapse
         • Micro‑partitioning
@@ -68,7 +68,7 @@ LAYER 2 — STORAGE  (Where raw data lives)
 LAYER 3 — PROCESSING  (How data is transformed)
 ================================================================================
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 3A. Batch Processing                                                  │
+    │ 3A. Batch Processing                                                   │
     └────────────────────────────────────────────────────────────────────────┘
         • Spark (RDD, DataFrame API)
         • Catalyst optimizer
@@ -76,7 +76,7 @@ LAYER 3 — PROCESSING  (How data is transformed)
         • Python pipelines (OOP, logging, config)
 
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 3B. Streaming Processing                                              │
+    │ 3B. Streaming Processing                                               │
     └────────────────────────────────────────────────────────────────────────┘
         • Kafka Streams
         • Spark Streaming
@@ -84,7 +84,7 @@ LAYER 3 — PROCESSING  (How data is transformed)
         • Micro‑batch vs continuous processing
 
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 3C. Data Modeling                                                     │
+    │ 3C. Data Modeling                                                      │
     └────────────────────────────────────────────────────────────────────────┘
         • OLTP vs OLAP
         • Star / Snowflake schema
@@ -97,7 +97,7 @@ LAYER 3 — PROCESSING  (How data is transformed)
 LAYER 4 — ORCHESTRATION & QUALITY  (How the system runs reliably)
 ================================================================================
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 4A. Orchestration                                                     │
+    │ 4A. Orchestration                                                      │
     └────────────────────────────────────────────────────────────────────────┘
         • Airflow DAGs
         • Task dependencies
@@ -105,7 +105,7 @@ LAYER 4 — ORCHESTRATION & QUALITY  (How the system runs reliably)
         • Sensors, hooks, operators
 
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 4B. Data Quality & Testing                                            │
+    │ 4B. Data Quality & Testing                                             │
     └────────────────────────────────────────────────────────────────────────┘
         • Great Expectations
         • dbt tests
@@ -118,14 +118,14 @@ LAYER 4 — ORCHESTRATION & QUALITY  (How the system runs reliably)
 LAYER 5 — SERVING & CONSUMPTION  (How data is used)
 ================================================================================
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 5A. BI & Analytics                                                    │
+    │ 5A. BI & Analytics                                                     │
     └────────────────────────────────────────────────────────────────────────┘
         • Power BI / Looker / Tableau
         • Semantic models
         • Metrics layers
 
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 5B. ML & Advanced Use Cases                                           │
+    │ 5B. ML & Advanced Use Cases                                            │
     └────────────────────────────────────────────────────────────────────────┘
         • Feature stores
         • Model scoring pipelines
@@ -136,14 +136,14 @@ LAYER 5 — SERVING & CONSUMPTION  (How data is used)
 LAYER 6 — PLATFORM & INFRASTRUCTURE  (The foundation everything sits on)
 ================================================================================
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 6A. Cloud Platform (Pick ONE)                                         │
+    │ 6A. Cloud Platform (Pick ONE)                                          │
     └────────────────────────────────────────────────────────────────────────┘
         • AWS: S3, Lambda, RDS, DynamoDB, Redshift, EMR, Kinesis
         • Azure: ADLS, Synapse, ADF, Databricks, Event Hub
         • GCP: GCS, BigQuery, Dataflow, Pub/Sub
 
     ┌────────────────────────────────────────────────────────────────────────┐
-    │ 6B. DevOps & Infra                                                    │
+    │ 6B. DevOps & Infra                                                     │
     └────────────────────────────────────────────────────────────────────────┘
         • Docker
         • Kubernetes (pods, deployments, services)
